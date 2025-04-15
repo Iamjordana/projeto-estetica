@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Macaroni';
+    src: url('../fontes/Macaroni.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family:'Dream Orphans';
+    src: url('../fontes/Dream\ Orphans.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'Creato Display';
+    src: url('../fontes/CreatoDisplay-Bold.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #F2F2F2;
+    --cor1: #07C7F2;
+    --cor2: #02B0EC;
+    --cor3: #0384c0;
+    --cor5: #0D0D0D;
+
+    --fonte-padrao:'Creato Display', sans-serif;
+    --fonte-destaque: 'Dream Display', sans-serif;
+    --fonte-titulo: 'Macaroni', sans-serif ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor0);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    padding: 20px;
+}
+
+header > img{
+    width: 20%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block; 
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+header > h1{ 
+    font-family: var(--fonte-titulo);
+    font-size: 3.5em;
+    color: var(--cor5);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    background-color: var(--cor3);
+    justify-content: center;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.329);
+}

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Signatra';
+    src: url('../fontes/Signatra.otf') format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family:'Dream Orphans';
+    src: url('../fontes/Dream\ Orphans.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'Creato Display';
+    src: url('../fontes/CreatoDisplay-Bold.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #F2F2F2;
+    --cor1: #07C7F2;
+    --cor2: #02B0EC;
+    --cor3: #0384c0;
+    --cor5: #0D0D0D;
+
+    --fonte-padrao:'Creato Display', sans-serif;
+    --fonte-destaque: 'Dream Display', sans-serif;
+    --fonte-titulo: 'Signatra', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor0);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--cor1);
+}
+header > img{
+    height: auto;
+    margin-bottom: 20px;
+    
+}
+
+header>h1{ 
+
+    font-family: var(--fonte-titulo);
+    font-size: 3.5rem;
+    color: var(--cor5);
+    text-align: center;
+    margin-bottom: 20px;
+}

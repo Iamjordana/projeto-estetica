@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Hello Valentina';
+    src: url('../fontes/Hello\ Valentina.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family:'Dream Orphans';
+    src: url('../fontes/Dream\ Orphans.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'Creato Display';
+    src: url('../fontes/CreatoDisplay-Bold.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #F2F2F2;
+    --cor1: #05DBF2;
+    --cor2: #07C7F2;
+    --cor3: #049DD9;
+    --cor5: ##D0D0D;
+
+    --fonte-padrao:'Creato Display', sans-serif;
+    --fonte-destaque: 'Dream Display', sans-serif;
+    --fonte-titulo: 'Hello Valentina', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+}
