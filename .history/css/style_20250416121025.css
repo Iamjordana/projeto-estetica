@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Macaroni';
+    src: url('../fontes/Macaroni.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family:'Dream Orphans';
+    src: url('../fontes/Dream\ Orphans.otf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family:'Creato Display';
+    src: url('../fontes/CreatoDisplay-Bold.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #F2F2F2;
+    --cor1: #07C7F2;
+    --cor2: #02B0EC;
+    --cor3: #0384c0;
+    --cor4: #444749;
+    --cor5: #0D0D0D;
+
+    --fonte-padrao:'Creato Display', sans-serif;
+    --fonte-destaque: 'Dream Display', sans-serif;
+    --fonte-titulo: 'Macaroni', sans-serif ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor0);
+}
+
+header {
+    background-color: var(--cor2);  
+    min-height: 150px;
+    padding: 20px;
+    position: relative;
+}
+
+header > img{
+    width: 12%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+header > h1{ 
+    font-family: var(--fonte-titulo);
+    font-size: 3.5em;
+    color: var(--cor5);
+    position: absolute;
+    left: 25%;
+    top: 30%;
+}
+
+nav {
+    position: absolute;
+    top: 80
+}
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration:.5s;
+}
+
+footer{
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration:.5s;
+}
+
+footer a:hover{
+    color: var(--cor1);
+    transition: 0.3s;
+    text-decoration: underline;
+}
