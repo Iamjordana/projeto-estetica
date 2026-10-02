@@ -3,92 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/imagens/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Serviços</title>
+    <title>Serviços | Estética e Clínica de Podologia Joana Medeiros</title>
+    <meta name="description" content="Veja nossos serviços de podologia, cabelos, manicure, pedicure e estética.">
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <header>
-        <img src="/imagens/logo.png" alt="Logo Estética e Clínica de Podologia Joana Medeiros">
-        <h1>Estética e Clínica de Podologia Joana Medeiros</h1>
-        <nav>
+<header>
+    <div class="container topo">
+        <a class="marca" href="index.html">
+            <img src="imagens/logo.png" alt="Logo Joana Medeiros">
+            <span>Estética e Clínica de Podologia Joana Medeiros</span>
+        </a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+        <nav id="menu" aria-label="Principal">
             <a href="index.html">Início</a>
-            <a href="serviços.html" >Serviços</a>
-            <a href="index.html" href="#sobre">Sobre Nós</a>
-            <a href="index.html" href="#contato">Contato</a>
+            <a href="serviços.html" aria-current="page">Serviços</a>
+            <a href="index.html#sobre">Sobre nós</a>
+            <a href="index.html#contato">Contato</a>
+            <a class="btn-nav" href="https://wa.me/5500000000000">Agendar</a>
         </nav>
-    </header>
-    <div id="banner">
-        <img src="" alt="">
     </div>
-    <main>
-        <section>
-            <h1>Estética</h1>
-            <h3>Cuide de você com nossos serviços de estética.</h3>
-            <div><img src="" alt=""></div>
-            <p>
-                Massagens Relaxantes
-                Alívio do estresse e bem-estar total.
-                
-                Depilação Profissional
-                Suavidade, conforto e técnica.
-                
-                Cabelos Lindos e Saudáveis
-                Corte, hidratação, escova e progressivas.
-                
-                Maquiagem Profissional
-                Produção impecável para qualquer ocasião.
-                
-                Manicure e Pedicure
-                Mãos e pés bem cuidados sempre.
-                
-                Design de Sobrancelhas
-                Expressão realçada com precisão.
-                
-                Tratamentos Capilares
-                Cuidados sob medida para seus fios.
-            </p>
-        </section>
-
-        <section>
-            <h1>Podologia</h1>
-            <h3>Cuide dos seus pés com quem entende do assunto.</h3>
-
-            <div><img src="" alt=""></div>
-            <p>
-                Avaliação Podológica Completa
-                Entendimento detalhado das suas necessidades.
-                
-                Corte Técnico de Unhas
-                Precisão e segurança para manter a saúde das unhas.
-                
-                Remoção de Calos e Calosidades
-                Alívio imediato para pés mais leves.
-                
-                Hidratação Profunda
-                Tratamento ideal para pele ressecada e aspereza.
-                
-                Desbaste de Unhas Espessadas
-                Mais conforto e estética para os pés.
-                
-                Tratamento de Unhas Encravadas e Micoses
-                Técnicas eficazes e cuidadosas.
-                
-                Cuidados com Pés Diabéticos
-                Atendimento especializado com protocolos seguros.
-
-                Reflexologia Podal
-                Relaxamento e equilíbrio através dos pés.
-                
-                Cuidados Pós-Cirúrgicos e Preventivos
-                Acompanhamento completo para sua recuperação.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Jordana Medeiros. Estética e Clínica de Podologia Joana Medeiros. Todos os direitos reservados.</p>
-    </footer>
+</header>
+<main>
+    <section class="titulo-pagina">
+        <div class="container">
+            <h1>Nossos serviços</h1>
+            <p>Cuide de você com quem entende do assunto.</p>
+            <nav class="atalhos" aria-label="Áreas de serviço">
+                <a href="#podologia">Podologia</a><a href="#cabelos">Cabelos</a><a href="#unhas">Manicure e pedicure</a><a href="#estetica">Estética</a>
+            </nav>
+        </div>
+    </section>
+    <section class="bloco-servico" id="podologia">
+        <div class="container">
+            <div><h2>Podologia</h2><p class="intro">Cuide dos seus pés com quem entende do assunto.</p></div>
+            <ul class="lista-servicos"><li><strong>Avaliação podológica completa</strong><span>Entendimento detalhado das suas necessidades.</span></li><li><strong>Corte técnico de unhas</strong><span>Precisão e segurança para manter a saúde das unhas.</span></li><li><strong>Remoção de calos e calosidades</strong><span>Alívio imediato para pés mais leves.</span></li><li><strong>Hidratação profunda</strong><span>Para pele ressecada e aspereza.</span></li><li><strong>Desbaste de unhas espessadas</strong><span>Mais conforto e estética para os pés.</span></li><li><strong>Unhas encravadas e micoses</strong><span>Técnicas eficazes e cuidadosas.</span></li><li><strong>Cuidados com pés diabéticos</strong><span>Atendimento especializado com protocolos seguros.</span></li><li><strong>Reflexologia podal</strong><span>Relaxamento e equilíbrio através dos pés.</span></li><li><strong>Pós-cirúrgico e preventivo</strong><span>Acompanhamento completo para sua recuperação.</span></li></ul>
+        </div>
+    </section>
+    <section class="bloco-servico" id="cabelos">
+        <div class="container">
+            <div><h2>Cabelos</h2><p class="intro">Corte, cor e cuidado para o seu estilo.</p></div>
+            <ul class="lista-servicos"><li><strong>Corte, hidratação e escova</strong><span>Cabelos lindos e saudáveis.</span></li><li><strong>Progressivas</strong><span>Alinhamento e brilho.</span></li><li><strong>Tratamentos capilares</strong><span>Cuidados sob medida para seus fios.</span></li></ul>
+        </div>
+    </section>
+    <section class="bloco-servico" id="unhas">
+        <div class="container">
+            <div><h2>Manicure e pedicure</h2><p class="intro">Mãos e pés impecáveis.</p></div>
+            <ul class="lista-servicos"><li><strong>Manicure</strong><span>Mãos bem cuidadas sempre.</span></li><li><strong>Pedicure</strong><span>Pés bem cuidados sempre.</span></li></ul>
+        </div>
+    </section>
+    <section class="bloco-servico" id="estetica">
+        <div class="container">
+            <div><h2>Estética</h2><p class="intro">Beleza e relaxamento em cada detalhe.</p></div>
+            <ul class="lista-servicos"><li><strong>Massagens relaxantes</strong><span>Alívio do estresse e bem-estar total.</span></li><li><strong>Depilação profissional</strong><span>Suavidade, conforto e técnica.</span></li><li><strong>Maquiagem profissional</strong><span>Produção impecável para qualquer ocasião.</span></li><li><strong>Design de sobrancelhas</strong><span>Expressão realçada com precisão.</span></li></ul>
+        </div>
+    </section>
+    <section class="chamada">
+        <div class="container">
+            <h2>Pronta(o) para se cuidar?</h2>
+            <a class="btn" href="https://wa.me/5500000000000">Agendar pelo WhatsApp</a>
+        </div>
+    </section>
+</main>
+<a class="zap" href="https://wa.me/5500000000000" aria-label="Agendar pelo WhatsApp">WhatsApp</a>
+<footer>
+    <p>&copy; 2025 <a href="https://www.linkedin.com/in/jordana-medeiros/">Jordana Medeiros</a>. Estética e Clínica de Podologia Joana Medeiros. Todos os direitos reservados.</p>
+</footer>
+<script src="js/script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

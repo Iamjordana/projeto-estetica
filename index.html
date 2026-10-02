@@ -4,54 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estética e Clínica de Podologia Joana Medeiros</title>
-    <link rel="shortcut icon" href="/imagens/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
+    <meta name="description" content="Podologia, cabelo, manicure, pedicure e estética em um só lugar. Atendimento humanizado e personalizado. Agende sua visita.">
+    <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-    
-    <header>
-        <img src="/imagens/logo-m.png" alt="Logo Estética e Clínica de Podologia Joana Medeiros">
-        <h1>Estética e Clínica de Podologia Joana Medeiros</h1>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="serviços.html" >Serviços</a>
-            <a href="#sobre">Sobre Nós</a>
-            <a href="#contato">Contato</a>   
+<header>
+    <div class="container topo">
+        <a class="marca" href="index.html">
+            <img src="imagens/logo.png" alt="Logo Joana Medeiros">
+            <span>Estética e Clínica de Podologia Joana Medeiros</span>
+        </a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+        <nav id="menu" aria-label="Principal">
+            <a href="index.html" aria-current="page">Início</a>
+            <a href="serviços.html">Serviços</a>
+            <a href="index.html#sobre">Sobre nós</a>
+            <a href="index.html#contato">Contato</a>
+            <a class="btn-nav" href="https://wa.me/5500000000000">Agendar</a>
         </nav>
-    </header>
+    </div>
+</header>
+<main>
+    <section class="hero">
+        <div class="container">
+            <div>
+                <h1>Cuidar de você é a nossa especialidade</h1>
+                <p>Podologia, cabelos, unhas e estética em um só lugar, com atendimento humanizado e técnica de verdade.</p>
+                <a class="btn" href="https://wa.me/5500000000000">Agendar pelo WhatsApp</a>
+                <a class="btn sec" href="serviços.html">Ver serviços</a>
+            </div>
+            <div class="hero-arte" role="img" aria-label="Espaço reservado para foto da clínica">
+                <div>Troque por uma foto do espaço<small>imagens/hero.jpg</small></div>
+            </div>
+        </div>
+    </section>
 
-    <main>
-        <section id="sobre">
-            <h1>Quem Somos?</h1>
-            <p>
-                Cuidar de você é a nossa especialidade
-                Somos uma clínica de estética e podologia dedicada ao seu bem-estar, beleza e saúde dos pés. Com atendimento humanizado, técnicas modernas e profissionais qualificados, oferecemos tratamentos personalizados para realçar sua autoestima e garantir conforto no dia a dia. Aqui, cada detalhe é pensado para que você se sinta bem consigo mesma(o). Agende sua visita e descubra o prazer de se cuidar!
-            </p>
+    <section class="areas">
+        <div class="container">
+            <div class="cab-secao">
+                <h2>Tudo para o seu bem-estar</h2>
+                <p>Escolha a área e veja os tratamentos disponíveis.</p>
+            </div>
+            <div class="grade">
+                <article class="cartao destaque">
+                    <h3>Podologia</h3>
+                    <p>Calos, unhas encravadas, micoses, pés diabéticos e cuidados preventivos.</p>
+                    <a href="serviços.html#podologia">Ver tratamentos</a>
+                </article>
+                <article class="cartao">
+                    <h3>Cabelos</h3>
+                    <p>Corte, hidratação, escova, progressiva e tratamentos capilares.</p>
+                    <a href="serviços.html#cabelos">Ver serviços</a>
+                </article>
+                <article class="cartao">
+                    <h3>Manicure e pedicure</h3>
+                    <p>Mãos e pés sempre bem cuidados, com materiais esterilizados.</p>
+                    <a href="serviços.html#unhas">Ver serviços</a>
+                </article>
+                <article class="cartao">
+                    <h3>Estética</h3>
+                    <p>Massagem, depilação, maquiagem e design de sobrancelhas.</p>
+                    <a href="serviços.html#estetica">Ver serviços</a>
+                </article>
+            </div>
+        </div>
+    </section>
 
-            <h2>Sobre Nós</h2>
-            <p>
-                Nossa jornada na estética começou em 2013, com um cuidado especial dedicado às unhas. Ao longo do tempo, expandimos horizontes, mergulhando no universo dos cabelos e conquistando diversas especializações. Em 2020, a formação em podologia trouxe ainda mais conhecimento e completude à nossa proposta. Hoje, somos uma clínica de estética completa, pronta para oferecer experiências únicas e personalizadas, com carinho, técnica e sofisticação. Aqui, cada detalhe é pensado para cuidar de você.
-            </p> 
-        </section>
+    <section id="sobre">
+        <div class="container sobre">
+            <div>
+                <div class="cab-secao"><h2>Quem somos</h2></div>
+                <p>Somos uma clínica de estética e podologia dedicada ao seu bem-estar, beleza e saúde dos pés. Com atendimento humanizado, técnicas modernas e profissionais qualificadas, oferecemos tratamentos personalizados para realçar sua autoestima e garantir conforto no dia a dia.</p>
+                <p>Aqui, cada detalhe é pensado para que você se sinta bem consigo mesma(o).</p>
+            </div>
+            <ol class="linha-tempo" aria-label="Nossa história">
+                <li><strong>2013</strong>Começamos na estética, com um cuidado especial dedicado às unhas.</li>
+                <li><strong>Depois</strong>Expandimos para o universo dos cabelos e conquistamos diversas especializações.</li>
+                <li><strong>2020</strong>A formação em podologia trouxe mais conhecimento e completou nossa proposta.</li>
+                <li><strong>Hoje</strong>Uma clínica de estética completa, com carinho, técnica e sofisticação.</li>
+            </ol>
+        </div>
+    </section>
 
-       <aside id="contato">
-              <h2>Contato</h2>
-              <p>Entre em contato conosco para agendar uma consulta ou tirar suas dúvidas.</p>
-              <p>Instagram: <a href=""></a> </p>
-              <p>Telefone: </p>
-              <p>Whatsapp:</p>
-              <p>email: <a href=""></a></p>
-              
-              <div class="localizacao">
-              <h2>Localização</h2>
-              <p>Estamos localizados na Rua das Flores, 123, Centro, Cidade - Estado.</p>
-              <p>Horário de funcionamento: Segunda a Sexta, das 6h às 18h.</p>
-              <p>Agende sua visita!</p>
-       </aside>
-    </main>
- 
-    <footer>
-        <p>&copy; 2025 <a href="https://www.linkedin.com/in/jordana-medeiros/">Jordana Medeiros</a>. Estética e Clínica de Podologia Joana Medeiros. Todos os direitos reservados.</p>
-    </footer>
+    <section class="areas">
+        <div class="container">
+            <div class="cab-secao"><h2>Como agendar</h2></div>
+            <ol class="passos">
+                <li><strong>Chame no WhatsApp</strong><p>Conte qual serviço você procura.</p></li>
+                <li><strong>Escolha o horário</strong><p>Atendemos de segunda a sexta, das 6h às 18h.</p></li>
+                <li><strong>Venha nos visitar</strong><p>Você é atendida(o) com calma e de forma personalizada.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="cab-secao"><h2>Perguntas frequentes</h2></div>
+            <div class="faq">
+                <details><summary>Preciso agendar horário?</summary><p>Sim. Agendando, garantimos tempo e atenção para o seu atendimento.</p></details>
+                <details><summary>Atendem pessoas com diabetes?</summary><p>Sim. Fazemos cuidados com pés diabéticos, seguindo protocolos seguros.</p></details>
+                <details><summary>Quais formas de pagamento vocês aceitam?</summary><p>Informe aqui as formas de pagamento da clínica.</p></details>
+                <details><summary>Como vocês cuidam da higiene dos materiais?</summary><p>Descreva aqui o processo de esterilização. Ele passa muita confiança, principalmente em podologia.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <div class="container contato-grade">
+            <div>
+                <div class="cab-secao"><h2>Contato e localização</h2><p>Fale conosco para agendar ou tirar dúvidas.</p></div>
+                <dl>
+                    <dt>WhatsApp</dt><dd><a href="https://wa.me/5500000000000">(00) 00000-0000</a></dd>
+                    <dt>Telefone</dt><dd>(00) 0000-0000</dd>
+                    <dt>Instagram</dt><dd><a href="https://instagram.com/seu_perfil">@seu_perfil</a></dd>
+                    <dt>E-mail</dt><dd><a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a></dd>
+                    <dt>Endereço</dt><dd>Rua das Flores, 123, Centro, Cidade - Estado</dd>
+                    <dt>Horário</dt><dd>Segunda a sexta, das 6h às 18h</dd>
+                </dl>
+            </div>
+            <div class="mapa">Cole aqui o mapa do Google Maps (Compartilhar &gt; Incorporar um mapa)</div>
+        </div>
+    </section>
+</main>
+<a class="zap" href="https://wa.me/5500000000000" aria-label="Agendar pelo WhatsApp">WhatsApp</a>
+<footer>
+    <p>&copy; 2025 <a href="https://www.linkedin.com/in/jordana-medeiros/">Jordana Medeiros</a>. Estética e Clínica de Podologia Joana Medeiros. Todos os direitos reservados.</p>
+</footer>
+<script src="js/script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
